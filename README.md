@@ -2,3 +2,4 @@
 
 * GT-1 change
 * PRJCT-6 change
+* KAN-2 change
