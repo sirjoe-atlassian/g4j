@@ -6,3 +6,4 @@
 * KAN-2 change
 * GUA-3 test
 * GUA-4 test
+* GUA-4 test
