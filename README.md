@@ -5,4 +5,3 @@
 * KAN-2 change
 * KAN-2 change
 * GUA-3 test
-* GUA-3 test
