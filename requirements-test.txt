@@ -1,0 +1,19 @@
+# Test automation dependencies for g4j project
+
+# Core testing framework
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Test utilities
+pytest-mock>=3.11.0
+pytest-xdist>=3.3.0  # For parallel test execution
+
+# Code coverage
+coverage>=7.3.0
+
+# Assertions and utilities
+assertpy>=1.1
+
+# Optional: For integration testing
+requests>=2.31.0
+responses>=0.23.0
