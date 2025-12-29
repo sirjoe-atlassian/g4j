@@ -1,0 +1,39 @@
+{
+  "test_automation": {
+    "framework_version": "1.0.0",
+    "description": "Test automation configuration for DEV-4",
+    "settings": {
+      "log_level": "INFO",
+      "parallel_execution": false,
+      "retry_failed_tests": true,
+      "max_retries": 3,
+      "timeout_seconds": 300,
+      "generate_reports": true,
+      "report_format": "text"
+    },
+    "test_suites": [
+      {
+        "name": "sample_tests",
+        "enabled": true,
+        "test_cases": [
+          "SampleTestCase",
+          "APITestCase"
+        ]
+      }
+    ],
+    "environments": {
+      "development": {
+        "base_url": "http://localhost:8080",
+        "api_key": "dev-api-key"
+      },
+      "staging": {
+        "base_url": "https://staging.example.com",
+        "api_key": "staging-api-key"
+      },
+      "production": {
+        "base_url": "https://api.example.com",
+        "api_key": "prod-api-key"
+      }
+    }
+  }
+}
