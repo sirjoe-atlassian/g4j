@@ -1,0 +1,34 @@
+[
+  {
+    "class_name": "StringUtils",
+    "test_name": "reverse_string",
+    "test_description": "reversing a string",
+    "setup_code": "utils = StringUtils()",
+    "action_code": "result = utils.reverse('hello')",
+    "assertion_code": "self.assertEqual(result, 'olleh')"
+  },
+  {
+    "class_name": "StringUtils",
+    "test_name": "to_uppercase",
+    "test_description": "converting string to uppercase",
+    "setup_code": "utils = StringUtils()",
+    "action_code": "result = utils.to_uppercase('hello')",
+    "assertion_code": "self.assertEqual(result, 'HELLO')"
+  },
+  {
+    "class_name": "MathOperations",
+    "test_name": "multiply",
+    "test_description": "multiplication of two numbers",
+    "setup_code": "math_ops = MathOperations()",
+    "action_code": "result = math_ops.multiply(4, 5)",
+    "assertion_code": "self.assertEqual(result, 20)"
+  },
+  {
+    "class_name": "MathOperations",
+    "test_name": "divide",
+    "test_description": "division of two numbers",
+    "setup_code": "math_ops = MathOperations()",
+    "action_code": "result = math_ops.divide(10, 2)",
+    "assertion_code": "self.assertEqual(result, 5)"
+  }
+]

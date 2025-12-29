@@ -1,0 +1,8 @@
+# Core requirements (none needed for basic functionality)
+# Python 3.6+ standard library is sufficient
+
+# Optional: For API testing templates
+requests>=2.28.0
+
+# Optional: For advanced test generation
+jinja2>=3.1.0
