@@ -1,0 +1,37 @@
+{
+  "total_tests": 4,
+  "passed": 4,
+  "failed": 0,
+  "errors": 0,
+  "skipped": 0,
+  "results": [
+    {
+      "test_name": "test_addition",
+      "status": "passed",
+      "duration": 2e-06,
+      "error_message": null,
+      "timestamp": "2025-12-29T04:11:18.930773"
+    },
+    {
+      "test_name": "test_subtraction",
+      "status": "passed",
+      "duration": 1e-06,
+      "error_message": null,
+      "timestamp": "2025-12-29T04:11:18.930888"
+    },
+    {
+      "test_name": "test_multiplication",
+      "status": "passed",
+      "duration": 1e-06,
+      "error_message": null,
+      "timestamp": "2025-12-29T04:11:18.930996"
+    },
+    {
+      "test_name": "test_division",
+      "status": "passed",
+      "duration": 1e-06,
+      "error_message": null,
+      "timestamp": "2025-12-29T04:11:18.931090"
+    }
+  ]
+}
