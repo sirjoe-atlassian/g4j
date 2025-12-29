@@ -1,0 +1,46 @@
+{
+  "test_automation": {
+    "version": "1.0.0",
+    "description": "Test automation configuration for DEV-4",
+    "settings": {
+      "log_level": "INFO",
+      "report_format": "json",
+      "output_directory": "./test_reports",
+      "retry_failed_tests": false,
+      "max_retries": 3,
+      "parallel_execution": false,
+      "max_workers": 4
+    },
+    "test_suites": {
+      "unit_tests": {
+        "enabled": true,
+        "path": "./tests/unit",
+        "pattern": "test_*.py"
+      },
+      "integration_tests": {
+        "enabled": true,
+        "path": "./tests/integration",
+        "pattern": "test_*.py"
+      },
+      "e2e_tests": {
+        "enabled": false,
+        "path": "./tests/e2e",
+        "pattern": "test_*.py"
+      }
+    },
+    "environments": {
+      "dev": {
+        "base_url": "http://localhost:8000",
+        "timeout": 30
+      },
+      "staging": {
+        "base_url": "https://staging.example.com",
+        "timeout": 60
+      },
+      "production": {
+        "base_url": "https://production.example.com",
+        "timeout": 60
+      }
+    }
+  }
+}
