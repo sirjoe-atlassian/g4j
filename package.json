@@ -1,0 +1,26 @@
+{
+  "name": "g4j-test-automation",
+  "version": "1.0.0",
+  "description": "Test automation framework with code generation capabilities",
+  "main": "src/test-automation/index.js",
+  "scripts": {
+    "test": "jest",
+    "test:unit": "jest tests/unit",
+    "test:integration": "jest tests/integration",
+    "test:e2e": "jest tests/e2e",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "generate:test": "node src/test-automation/generator.js"
+  },
+  "keywords": ["test", "automation", "testing", "generator"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0"
+  },
+  "dependencies": {
+    "commander": "^11.0.0",
+    "mustache": "^4.2.0"
+  }
+}
