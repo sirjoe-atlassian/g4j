@@ -1,0 +1,97 @@
+{
+  "tests": [
+    {
+      "type": "unit",
+      "filename": "calculator.test.js",
+      "moduleName": "Calculator",
+      "testCases": [
+        {
+          "description": "should add two numbers correctly",
+          "arrange": [
+            "const calculator = new Calculator();",
+            "const a = 5;",
+            "const b = 3;"
+          ],
+          "act": [
+            "const result = calculator.add(a, b);"
+          ],
+          "assert": [
+            "expect(result).toBe(8);"
+          ]
+        },
+        {
+          "description": "should subtract two numbers correctly",
+          "arrange": [
+            "const calculator = new Calculator();",
+            "const a = 10;",
+            "const b = 4;"
+          ],
+          "act": [
+            "const result = calculator.subtract(a, b);"
+          ],
+          "assert": [
+            "expect(result).toBe(6);"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "integration",
+      "filename": "user-service.test.js",
+      "moduleName": "UserService",
+      "setup": [
+        "await database.connect();",
+        "await database.clear();"
+      ],
+      "cleanup": [
+        "await database.disconnect();"
+      ],
+      "testCases": [
+        {
+          "description": "should create and retrieve user",
+          "arrange": [
+            "const userData = { name: 'John Doe', email: 'john@example.com' };"
+          ],
+          "act": [
+            "const user = await userService.createUser(userData);",
+            "const retrieved = await userService.getUser(user.id);"
+          ],
+          "assert": [
+            "expect(retrieved.name).toBe(userData.name);",
+            "expect(retrieved.email).toBe(userData.email);"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "e2e",
+      "filename": "login-flow.test.js",
+      "featureName": "User Login Flow",
+      "setup": [
+        "await browser.launch();",
+        "await testDb.seed();"
+      ],
+      "cleanup": [
+        "await browser.close();",
+        "await testDb.cleanup();"
+      ],
+      "scenarios": [
+        {
+          "scenario": "user can login with valid credentials",
+          "given": [
+            "await page.goto('http://localhost:3000/login');"
+          ],
+          "when": [
+            "await page.fill('#username', 'testuser');",
+            "await page.fill('#password', 'password123');",
+            "await page.click('#login-button');"
+          ],
+          "then": [
+            "await expect(page).toHaveURL('http://localhost:3000/dashboard');",
+            "await expect(page.locator('.welcome-message')).toBeVisible();"
+          ]
+        }
+      ]
+    }
+  ]
+}
