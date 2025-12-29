@@ -1,0 +1,13 @@
+# Test Automation Framework Requirements
+# No external dependencies required - uses Python standard library only
+# Compatible with Python 3.6+
+
+# Optional: For enhanced test reporting
+# pytest>=7.0.0
+# pytest-html>=3.1.0
+
+# Optional: For code coverage
+# coverage>=6.0
+
+# Optional: For test mocking
+# unittest-mock>=1.5.0

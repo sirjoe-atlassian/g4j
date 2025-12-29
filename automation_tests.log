@@ -1,0 +1,9 @@
+2025-12-29 04:11:18,930 - __main__ - INFO - Starting test: test_addition
+2025-12-29 04:11:18,930 - __main__ - INFO - Test test_addition completed with status: passed
+2025-12-29 04:11:18,930 - __main__ - INFO - Starting test: test_subtraction
+2025-12-29 04:11:18,930 - __main__ - INFO - Test test_subtraction completed with status: passed
+2025-12-29 04:11:18,930 - __main__ - INFO - Starting test: test_multiplication
+2025-12-29 04:11:18,931 - __main__ - INFO - Test test_multiplication completed with status: passed
+2025-12-29 04:11:18,931 - __main__ - INFO - Starting test: test_division
+2025-12-29 04:11:18,931 - __main__ - INFO - Test test_division completed with status: passed
+2025-12-29 04:11:18,931 - __main__ - INFO - Test report generated: example_test_report.json
