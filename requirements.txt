@@ -1,0 +1,31 @@
+# Test Automation Framework Requirements
+# Jira Issue: DEV-4 - Test automation generate code
+
+# Core testing framework
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-html>=3.2.0
+pytest-xdist>=3.3.0
+
+# API testing
+requests>=2.31.0
+responses>=0.23.0
+
+# UI testing (Selenium)
+selenium>=4.10.0
+webdriver-manager>=3.8.0
+
+# Data generation and manipulation
+faker>=19.0.0
+pydantic>=2.0.0
+
+# Utilities
+python-dotenv>=1.0.0
+pyyaml>=6.0
+
+# Logging and reporting
+allure-pytest>=2.13.0
+
+# Code quality
+pylint>=2.17.0
+black>=23.0.0
