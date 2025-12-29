@@ -1,0 +1,50 @@
+{
+    "class_name": "TestCalculator",
+    "test_cases": [
+        {
+            "name": "add_positive_numbers",
+            "description": "Test addition of two positive numbers",
+            "inputs": {
+                "a": 10,
+                "b": 20
+            },
+            "expected": 30
+        },
+        {
+            "name": "add_negative_numbers",
+            "description": "Test addition of two negative numbers",
+            "inputs": {
+                "a": -5,
+                "b": -3
+            },
+            "expected": -8
+        },
+        {
+            "name": "multiply_numbers",
+            "description": "Test multiplication operation",
+            "inputs": {
+                "a": 4,
+                "b": 5
+            },
+            "expected": 20
+        },
+        {
+            "name": "divide_numbers",
+            "description": "Test division operation",
+            "inputs": {
+                "a": 20,
+                "b": 4
+            },
+            "expected": 5
+        },
+        {
+            "name": "divide_by_zero",
+            "description": "Test division by zero handling",
+            "inputs": {
+                "a": 10,
+                "b": 0
+            },
+            "expected": null
+        }
+    ]
+}
