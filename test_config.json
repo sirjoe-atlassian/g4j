@@ -1,0 +1,27 @@
+{
+  "test_environment": {
+    "name": "development",
+    "base_url": "http://localhost:8080",
+    "timeout": 30,
+    "retry_count": 3
+  },
+  "test_data": {
+    "data_directory": "./test_data",
+    "fixtures_directory": "./fixtures"
+  },
+  "reporting": {
+    "output_directory": "./test_reports",
+    "report_format": "json",
+    "generate_html": true,
+    "save_screenshots": true
+  },
+  "logging": {
+    "level": "INFO",
+    "log_file": "test_automation.log",
+    "console_output": true
+  },
+  "parallel_execution": {
+    "enabled": false,
+    "max_workers": 4
+  }
+}
