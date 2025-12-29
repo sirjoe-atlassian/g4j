@@ -1,0 +1,28 @@
+# Test results and reports
+test_results/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp_*
+*.tmp
+*.log
