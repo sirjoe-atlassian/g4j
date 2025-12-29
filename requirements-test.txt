@@ -1,0 +1,32 @@
+# Testing Framework Dependencies
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-xdist>=3.3.1
+pytest-timeout>=2.1.0
+pytest-mock>=3.11.1
+
+# Reporting and Coverage
+coverage>=7.3.0
+pytest-html>=3.2.0
+
+# API Testing
+requests>=2.31.0
+responses>=0.23.1
+
+# Data Validation
+jsonschema>=4.19.0
+
+# Performance Testing
+locust>=2.15.1
+
+# Web UI Testing (optional)
+selenium>=4.12.0
+playwright>=1.37.0
+
+# Mocking and Fixtures
+faker>=19.6.0
+factory-boy>=3.3.0
+
+# Utilities
+python-dotenv>=1.0.0
+pyyaml>=6.0.1
