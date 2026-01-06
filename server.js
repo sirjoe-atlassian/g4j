@@ -14,14 +14,6 @@ app.get('/helloworld', (req, res) => {
   });
 });
 
-// Health check endpoint
-app.get('/health', (req, res) => {
-  res.status(200).json({
-    status: 'ok',
-    uptime: process.uptime()
-  });
-});
-
 // 404 handler
 app.use((req, res) => {
   res.status(404).json({

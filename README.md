@@ -57,28 +57,6 @@ GET /helloworld
 
 ---
 
-### 2. GET /health
-
-Health check endpoint to verify the server is running.
-
-**Request:**
-```
-GET /health
-```
-
-**Response:**
-```json
-{
-  "status": "ok",
-  "uptime": 123.456
-}
-```
-
-**Status Codes:**
-- `200 OK` - Server is healthy
-
----
-
 ## Error Responses
 
 ### 404 Not Found
